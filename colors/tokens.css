@@ -1,0 +1,19 @@
+/**
+ * ChapelCloud brand color tokens
+ * Canonical copy — keep home-site / portal in sync.
+ */
+:root {
+  --font-display: 'Fraunces', 'Georgia', serif;
+  --font-sans: 'Figtree', ui-sans-serif, system-ui, sans-serif;
+
+  --color-ink: #162033;
+  --color-ink-muted: #4a5568;
+  --color-mist: #eef3f8;
+  --color-cloud: #f8fafc;
+  --color-stone: #d4dde8;
+  --color-chapel: #1a5f6a;
+  --color-chapel-deep: #0f3d45;
+  --color-sky: #5b8fad;
+  --color-sky-soft: #b8d4e6;
+  --color-amber-glow: #c4a35a;
+}
