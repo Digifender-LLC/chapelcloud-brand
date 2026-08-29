@@ -1,19 +1,30 @@
 /**
- * ChapelCloud brand color tokens
- * Canonical copy — keep home-site / portal in sync.
+ * ChapelCloud brand tokens — covering presence
+ * Canonical. Product repos should reference or copy from here.
+ * Concept: cloud as covering (H6051); light as quiet witness (Matt 5:16).
  */
 :root {
-  --font-display: 'Fraunces', 'Georgia', serif;
-  --font-sans: 'Figtree', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Newsreader', Georgia, 'Times New Roman', serif;
+  --font-sans: 'Source Sans 3', ui-sans-serif, system-ui, sans-serif;
 
-  --color-ink: #162033;
-  --color-ink-muted: #4a5568;
-  --color-mist: #eef3f8;
-  --color-cloud: #f8fafc;
-  --color-stone: #d4dde8;
-  --color-chapel: #1a5f6a;
-  --color-chapel-deep: #0f3d45;
-  --color-sky: #5b8fad;
-  --color-sky-soft: #b8d4e6;
-  --color-amber-glow: #c4a35a;
+  --color-ink: #121820;
+  --color-ink-muted: #5c6672;
+  --color-cloud: #f3f5f7;
+  --color-mist: #e6eaef;
+  --color-stone: #b4bec9;
+  --color-presence: #2a4054;
+  --color-presence-deep: #1a2b3a;
+  --color-covering: #7a94a8;
+  --color-witness: #b8923f;
+  --color-witness-soft: #e8d4a8;
+
+  /* Semantic aliases */
+  --color-brand: var(--color-presence);
+  --color-brand-hover: var(--color-presence-deep);
+  --color-accent: var(--color-witness);
+  --color-bg: var(--color-cloud);
+  --color-surface: var(--color-mist);
+  --color-border: var(--color-stone);
+  --color-text: var(--color-ink);
+  --color-text-muted: var(--color-ink-muted);
 }

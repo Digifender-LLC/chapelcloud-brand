@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ChapelCloud — brand board</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../colors/tokens.css" />
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: var(--font-sans);
+      color: var(--color-text);
+      background:
+        radial-gradient(120% 80% at 50% -10%, var(--color-mist) 0%, transparent 55%),
+        linear-gradient(180deg, var(--color-cloud) 0%, #eef1f4 100%);
+      min-height: 100vh;
+      padding: 3rem 1.5rem 4rem;
+    }
+    main {
+      max-width: 960px;
+      margin: 0 auto;
+    }
+    h1, h2 {
+      font-family: var(--font-display);
+      font-weight: 500;
+      letter-spacing: -0.02em;
+    }
+    h1 { font-size: clamp(2.25rem, 5vw, 3.25rem); margin: 1rem 0 0.35rem; }
+    h2 { font-size: 1.35rem; margin: 2.5rem 0 1rem; color: var(--color-presence); }
+    .lede {
+      color: var(--color-text-muted);
+      font-size: 1.125rem;
+      max-width: 36em;
+      line-height: 1.5;
+    }
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.25rem;
+      align-items: stretch;
+    }
+    .swatches {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+      gap: 0.75rem;
+    }
+    .swatch {
+      border-radius: 10px;
+      overflow: hidden;
+      border: 1px solid var(--color-border);
+      background: #fff;
+    }
+    .swatch .chip { height: 64px; }
+    .swatch figcaption {
+      padding: 0.5rem 0.65rem 0.65rem;
+      font-size: 0.8rem;
+      line-height: 1.35;
+    }
+    .swatch code { color: var(--color-text-muted); font-size: 0.72rem; }
+    .type-sample {
+      padding: 1.25rem 1.5rem;
+      background: #fff;
+      border: 1px solid var(--color-border);
+      border-radius: 12px;
+    }
+    .type-sample .display {
+      font-family: var(--font-display);
+      font-size: 2rem;
+      margin: 0 0 0.5rem;
+    }
+    .type-sample .body { margin: 0; color: var(--color-text-muted); line-height: 1.55; }
+    .mark-card {
+      background: #fff;
+      border: 1px solid var(--color-border);
+      border-radius: 12px;
+      padding: 1.25rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 0.75rem;
+      min-width: 140px;
+      flex: 1 1 140px;
+    }
+    .mark-card.dark {
+      background: var(--color-presence-deep);
+      border-color: var(--color-presence-deep);
+    }
+    .mark-card.dark span { color: var(--color-stone); }
+    .mark-card img { width: 72px; height: 72px; }
+    .mark-card.wide { flex: 1 1 280px; }
+    .mark-card.wide img { width: min(320px, 100%); height: auto; }
+    .mark-card.tall img { width: 120px; height: auto; }
+    .mark-card span { font-size: 0.8rem; color: var(--color-text-muted); text-align: center; }
+    .anatomy {
+      background: #fff;
+      border: 1px solid var(--color-border);
+      border-radius: 12px;
+      padding: 1.25rem 1.5rem;
+      color: var(--color-text-muted);
+      line-height: 1.55;
+      font-size: 0.95rem;
+      max-width: 40em;
+    }
+    .anatomy strong { color: var(--color-presence); font-weight: 600; }
+    footer {
+      margin-top: 3rem;
+      font-size: 0.85rem;
+      color: var(--color-text-muted);
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <p style="margin:0; color: var(--color-covering); font-weight: 600; letter-spacing: 0.04em; text-transform: uppercase; font-size: 0.75rem;">Brand board</p>
+    <h1>ChapelCloud</h1>
+    <p class="lede">Technology care for churches — covering, clear, calm. A protective mantle of interlocking plates with a steady witness of light at the center.</p>
+
+    <h2>Mark anatomy</h2>
+    <p class="anatomy">
+      <strong>Shield / mantle</strong> — soft geometric crest (sanctuary, covering presence).<br>
+      <strong>Interlocking plates</strong> — sweeping panels in presence, deep, and covering blues (enclosure without spectacle).<br>
+      <strong>Witness star</strong> — four-pointed gold compass at the center (pillar of light, quiet witness).<br>
+      <strong>Clear space</strong> — minimum margin equal to the width of the central star.
+    </p>
+
+    <h2>Marks</h2>
+    <div class="row">
+      <div class="mark-card">
+        <img src="../logos/mark.svg" alt="Mark on presence" />
+        <span>mark.svg</span>
+      </div>
+      <div class="mark-card">
+        <img src="../logos/mark-light.svg" alt="Mark on light" />
+        <span>mark-light.svg</span>
+      </div>
+      <div class="mark-card">
+        <img src="../logos/mark-alone.svg" alt="Mark alone" />
+        <span>mark-alone.svg</span>
+      </div>
+      <div class="mark-card">
+        <img src="../logos/favicon.svg" alt="Favicon" />
+        <span>favicon.svg</span>
+      </div>
+      <div class="mark-card">
+        <img src="../logos/mark-mono.svg" alt="1-color mark" />
+        <span>mark-mono.svg</span>
+      </div>
+      <div class="mark-card dark">
+        <img src="../logos/mark-reversed.svg" alt="Reversed mark" />
+        <span>mark-reversed.svg</span>
+      </div>
+    </div>
+
+    <h2>Lockups</h2>
+    <div class="row">
+      <div class="mark-card wide">
+        <img src="../logos/lockup.svg" alt="Horizontal lockup" />
+        <span>lockup.svg — horizontal</span>
+      </div>
+      <div class="mark-card tall">
+        <img src="../logos/lockup-stacked.svg" alt="Stacked lockup" />
+        <span>lockup-stacked.svg</span>
+      </div>
+    </div>
+
+    <h2>Color</h2>
+    <div class="swatches">
+      <figure class="swatch"><div class="chip" style="background:#121820"></div><figcaption>ink<br><code>#121820</code></figcaption></figure>
+      <figure class="swatch"><div class="chip" style="background:#5c6672"></div><figcaption>inkMuted<br><code>#5c6672</code></figcaption></figure>
+      <figure class="swatch"><div class="chip" style="background:#f3f5f7"></div><figcaption>cloud<br><code>#f3f5f7</code></figcaption></figure>
+      <figure class="swatch"><div class="chip" style="background:#e6eaef"></div><figcaption>mist<br><code>#e6eaef</code></figcaption></figure>
+      <figure class="swatch"><div class="chip" style="background:#b4bec9"></div><figcaption>stone<br><code>#b4bec9</code></figcaption></figure>
+      <figure class="swatch"><div class="chip" style="background:#2a4054"></div><figcaption>presence<br><code>#2a4054</code></figcaption></figure>
+      <figure class="swatch"><div class="chip" style="background:#1a2b3a"></div><figcaption>presenceDeep<br><code>#1a2b3a</code></figcaption></figure>
+      <figure class="swatch"><div class="chip" style="background:#7a94a8"></div><figcaption>covering<br><code>#7a94a8</code></figcaption></figure>
+      <figure class="swatch"><div class="chip" style="background:#b8923f"></div><figcaption>witness<br><code>#b8923f</code></figcaption></figure>
+      <figure class="swatch"><div class="chip" style="background:#e8d4a8"></div><figcaption>witnessSoft<br><code>#e8d4a8</code></figcaption></figure>
+    </div>
+
+    <h2>Type</h2>
+    <div class="type-sample">
+      <p class="display">Covering presence for ministry rhythms</p>
+      <p class="body">Source Sans 3 for body and UI. Newsreader (semi-bold) for headlines and the ChapelCloud wordmark. Mission-first, clear, calm — excellence that points beyond us.</p>
+    </div>
+
+    <footer>
+      See <code>guidelines/foundation.md</code> for UberBible-backed meaning · chapel.cloud · regenerate marks with <code>logos/_generate_mark.py</code>
+    </footer>
+  </main>
+</body>
+</html>
